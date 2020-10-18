@@ -1,0 +1,552 @@
+/* ＝＝＝＝＝＝ */
+
+/* 共通 */
+
+/* ＝＝＝＝＝＝ */
+
+html {
+  /* 1rem=10px, 16px=1.6rem */
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #1c1c1c;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  text-size-adjust: 100%;
+}
+
+/* コンテンツ同士と左右に余白 */
+.container {
+  padding: 100px 15% 0;
+}
+
+img {
+  vertical-align: bottom;
+  width: 100%;
+}
+
+.main__title--large {
+  background: #5294ee;
+  font-size: 4.8rem;
+  text-align: center;
+  color: #fbfbfa;
+  padding: 24px;
+  border-radius: 5px;
+  line-height: 3;
+}
+
+.main__title--middle {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.main__title--middle span {
+  display: block;
+  font-size: 2.4rem;
+  letter-spacing: 0.2rem;
+}
+
+.main__title--middle:after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin: 18px auto;
+  background: #ccc;
+}
+
+.main__title--small {
+  color: #fbfbfa;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* ＝＝＝＝＝＝ */
+
+/* ヘッダー */
+
+/* ＝＝＝＝＝＝ */
+
+.header {
+  background: #172397;
+  text-decoration: none;
+  color: #fbfbfa;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.header__title {
+  font-size: 2.4rem;
+}
+
+.header__nav-inner {
+  display: flex;
+}
+
+.header__nav-inner li {
+  margin-right: 32px;
+}
+
+/* メニューにホバーしたら下線 */
+.header__nav-link {
+  display: block;
+}
+
+/* メニューにホバーしたら下線 */
+.header__nav-link::after {
+  border-bottom: solid 3px #fff;
+  bottom: -4px;
+  content: '';
+  display: block;
+  transition: all .3s ease;
+  width: 0;
+}
+
+/* メニューにホバーしたら下線 */
+.header__nav-link:hover::after {
+  width: 100%;
+}
+
+/* ＝＝＝＝＝＝ */
+
+/* ヒーローバナー */
+
+/* ＝＝＝＝＝＝ */
+
+.fv {
+  height: 90vh;
+  background-image: url("../img/fv2.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+
+/* ＝＝＝＝＝＝ */
+
+/* ニュース */
+
+/* ＝＝＝＝＝＝ */
+
+.news {
+  width: 80%;
+  height: 120px;
+  overflow-y: scroll;
+  margin: 0 auto;
+  border: 1px double #ccc;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.news-item {
+  margin-bottom: 5px;
+}
+
+/* ＝＝＝＝＝＝ */
+
+/* ビジネス*/
+
+/* ＝＝＝＝＝＝ */
+
+
+.main__side-by-side-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.img-wrapper {
+  width: 50%;
+  max-width: 400px;
+  flex-wrap: wrap;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 30px 0 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 写真を暗くするためのrelative */
+  position: relative;
+}
+
+.img-wrapper1 {
+  background-image: url("../img/business1.jpeg");
+}
+
+.img-wrapper2 {
+  background-image: url("../img/business2.jpeg");
+}
+
+.img-wrapper3 {
+  background-image: url("../img/business3.jpeg");
+}
+
+.text-wrapper {
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+/* 写真を暗くするため */
+.img-wrapper:before {
+  background: black;
+  opacity: 0.3;
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/* ＝＝＝＝＝＝ */
+
+/* メリット */
+
+/* ＝＝＝＝＝＝ */
+
+.text__button {
+  color: #fbfbfa;
+  background: #5294ee;
+  padding: 20px;
+  margin: 20px 0;
+  border-bottom: solid 5px #3c6eb4;
+  box-shadow: 0 2px 2px 1px #dcdcdc;
+  width: 100%;
+  text-align: center;
+}
+
+.merit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.merit__inner {
+  width: 30%;
+  box-sizing: border-box;
+  min-height: 400px;
+}
+
+.merit__inner+.merit__inner {
+  margin-left: 20px;
+}
+
+.merit__img {
+  margin-bottom: 10px;
+}
+
+.main__title--xs {
+  text-align: center;
+  font-size: 2.0rem;
+  border-bottom: 4px double #ccc;
+  font-weight: bold;
+}
+
+.merit__text {
+  margin-top: 10px;
+}
+
+.merit__link {
+  margin-top: 20px;
+  color: blue;
+}
+
+/* ＝＝＝＝＝＝ */
+
+/* お問い合わせ */
+
+/* ＝＝＝＝＝＝ */
+
+.space-between {
+  justify-content: space-between;
+}
+
+.address__text {
+  font-size: 2.0rem;
+}
+
+.map {
+  margin-right: 30px;
+}
+
+.map iframe {
+  min-width: 500px;
+  height: 425px;
+  border: none;
+}
+
+.text__button__text-large {
+  font-size: 3.2rem;
+}
+
+/* ＝＝＝＝＝＝ */
+
+/* 上へ戻るボタン */
+
+/* ＝＝＝＝＝＝ */
+
+.totop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2.4rem;
+  display: none;
+}
+
+.totop__link {
+  background: #172397;
+  text-decoration: none;
+  color: #fbfbfa;
+  width: 100px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+  border: 2px solid #fbfbfa;
+}
+
+.totop__link:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+/* ＝＝＝＝＝＝ */
+
+/* フッター */
+
+/* ＝＝＝＝＝＝ */
+
+footer {
+  background: #172397;
+  color: #fbfbfa;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+
+/* ＝＝＝＝＝＝ */
+
+/* レスポンシブ対応 */
+
+/* ＝＝＝＝＝＝ */
+
+/* ipad */
+
+@media screen and (max-width: 768px) {
+  /* 共通 */
+  .container {
+    padding: 80px 5% 0;
+  }
+  /* fv  */
+  .fv {
+    height: 70vh;
+  }
+  .main__title--large {
+    font-size: 4.0rem;
+  }
+  /* 事業内容 */
+  .img-wrapper {
+    margin: 0;
+    width: 100%;
+  }
+  /* メリット */
+  .merit {
+    flex-direction: column;
+  }
+  .merit__inner {
+    width: 90%;
+  }
+  .merit__inner+.merit__inner {
+    margin-left: 0;
+  }
+  .merit__text {
+    margin: 20px 10px;
+  }
+  /* アクセス */
+  .map {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .map__inner {
+    position: relative;
+    height: 0;
+    padding-top: 56.25%;
+    overflow: hidden;
+  }
+  .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* 携帯用 */
+@media screen and (max-width: 414px) {
+  /* 共通 */
+  .main__title--middle {
+    font-size: 2.0rem;
+  }
+  .main__title--middle span {
+    font-size: 1.2rem;
+  }
+  .main__title--small {
+    font-size: 2.0rem;
+  }
+  /* fv */
+  .main__title--large {
+    font-size: 2.4rem;
+    padding: 10px;
+  }
+  /* ヘッダー */
+  .header {
+    height: 80px;
+  }
+  .header__title {
+    font-size: 2.0rem;
+  }
+  /* ニュース */
+  .news {
+    font-size: 1.4rem;
+  }
+  /* 事業内容 */
+  .img-wrapper {
+    width: 100%;
+  }
+  /* お問い合わせ */
+  .address__text {
+    font-size: 1.6rem;
+  }
+  .text__button__text-large {
+    font-size: 2.6rem;
+  }
+  .totop {
+    font-size: 1.2rem;
+    right: 10px;
+  }
+  .totop__link {
+    width: 50px;
+    padding: 15px 0;
+  }
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+/* レスポンシブ、ボタンとメニュー部分 */
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+/* jsで使用 */
+.stop-scroll {
+  overflow: hidden;
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* バーガーボタン部分 */
+  .burger {
+    display: inline-block;
+    transition: all .4s;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    z-index: 3;
+  }
+  .burger__bar {
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fbfbfa;
+    border-radius: 3px;
+  }
+  
+  .burger__bar--top {
+    top: 5px;
+  }
+  .burger__bar--mid {
+    top: 50%;
+  }
+  .burger__bar--last {
+    bottom: 5px;
+  }
+
+  /* ハンバーガーボタンのアニメーション*/
+  .burger.is-cross .burger__bar--top {
+    transform: translateY(13px) rotate(-45deg);
+    background: #172397;
+  }
+  .burger.is-cross .burger__bar--mid {
+    opacity: 0;
+  }
+  .burger.is-cross .burger__bar--last {
+    transform: translateY(-14px) rotate(45deg);
+    background: #172397;
+  }
+
+  /* メニュー部分 */
+  .header__nav-container {
+    /* 横並びのメニューを消す */
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  /* nav  */
+  .header__nav {
+    background: #fbfbfa;
+    color: #172397;
+    font-size: 2.0rem;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  /* ul */
+  .header__nav-inner {
+    /* メニューを縦並び*/
+    display: block;
+    position: absolute;
+    /* 下４つでメニュー項目の位置を決める */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .header__nav-inner li {
+    /* PC版の打ち消し */
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
