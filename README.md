@@ -12,4 +12,4 @@
 の３点を意識しました。
 
 # 開発環境
-macOS(Catallina)、html5、CSS3、jQuery(3.5.1)
+MacOS(Catallina)、HTML5、CSS3、jQuery(3.5.1)
